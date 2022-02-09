@@ -61,7 +61,7 @@ EX) S(1,'name','sample_')
 
 
 
-*input, ouput, sample_input, sample_out 외에는 비교 불가 ->파일 이름을 input으로 변경
+- (xxx_)in(out)put.txt 외에는 비교 불가 ->파일 이름을 input으로 변경
 
 
 
