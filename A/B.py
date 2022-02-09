@@ -16,21 +16,17 @@ def path(input_num, input_name):
 
 
 #input 입력, 결과값 저장 시작
-def S(input_num = 0, input_name = '', sample_flag=''):
+def S(input_num = 0, input_name = '', plusname=''):
     datanum, datapath = path(input_num, input_name)
     sys.stdout = open(root + '\\my_output.txt','w') # txt로 저장
-    if sample_flag != '':
-        sample_flag = 'sample_'
-    sys.stdin = open(datapath+  f'\\{sample_flag}input{datanum}.txt', 'r')
+    sys.stdin = open(datapath+  f'\\{plusname}input{datanum}.txt', 'r')
 
 
-def E(input_num = 0, input_name = '',sample_flag=''):
+def E(input_num = 0, input_name = '',plusname=''):
     datanum, datapath = path(input_num, input_name)
     sys.stdout.close
     sys.stdout = temp
-    if sample_flag != '':
-        sample_flag = 'sample_'
-    right_answer_que = deque(open(datapath + f'\\{sample_flag}output{datanum}.txt', 'r').readlines())
+    right_answer_que = deque(open(datapath + f'\\{plusname}output{datanum}.txt', 'r').readlines())
     my_answer_que = deque(open(root + '\\my_output.txt', 'r').readlines())
     while right_answer_que:
         answer = right_answer_que.popleft().strip()
@@ -45,11 +41,9 @@ def E(input_num = 0, input_name = '',sample_flag=''):
         else:
             print(f'{my_answer} -> X, answer: {answer}')
     
-def C(input_num = 0, input_name = '', sample_flag=''):
+def C(input_num = 0, input_name = '', plusname=''):
     datanum, datapath = path(input_num, input_name)
-    if sample_flag != '':
-        sample_flag = 'sample_'
-    right_answer_que = deque(open(datapath + f'\\{sample_flag}output{datanum}.txt', 'r').readlines())
+    right_answer_que = deque(open(datapath + f'\\{plusname}output{datanum}.txt', 'r').readlines())
     my_answer_que = deque(open(root + '\\my_output.txt', 'r').readlines())
     while right_answer_que:
         answer = right_answer_que.popleft().strip()
