@@ -2,6 +2,14 @@
 
 
 
+폴더 경로
+
+*.py 파일과 동일 위치에 A폴더
+
+![경로](README.assets/PATH_IMG.png)
+
+
+
 ![이미지1](README.assets/IMG_1.PNG)
 
 ```
@@ -45,15 +53,11 @@ C(정답 번호, '내 PC 이름')
 
 오류 발생 전까지 정답 비교
 
+![이미지6](README.assets/제목 없음.png)
 
+![이미지4](README.assets/IMG_4.PNG)txt이름이 input이 아닐 경우 S,E,C 3번째 인자에 in(out)put 앞의 값 입력 (_까지 입력)
 
-![이미지4](README.assets/IMG_4.PNG)
-
-정답 txt이름이 sample_input, sample_output일 경우 S,E,C 3번째 인자에 아무값이나 입력
-
-EX) S(1,'name',1), E(2,'name,'a'), C(3,'name','asdsad)
-
-3번째 인자가 입력을 받을 경우(공백이 아닐 경우) sample_in(out)put 이랑 비교
+EX) S(1,'name','sample_')
 
 
 
@@ -70,13 +74,13 @@ EX) S(1,'name',1), E(2,'name,'a'), C(3,'name','asdsad)
 
 사용 예)
 
-함수(num=0, name='', sample_flag='') 
+함수(num=0, name='', plusname='') 
 
 첫번째 인자 input,output 번호
 
 두번쨰 인자 '내 pc 이름' , 입력 안할 시 A\\Downloads 폴더의 txt와 비교
 
-세번째 인자, 입력 안할 시('') in(out)put, 값이 들어올 경우 sampl_in(out)put 과 비교
+세번째 인자, 입력 안할 시 in(out)put, 값이 들어올 경우 '입력 값' + in(out)put 과 비교
 
 
 
@@ -94,15 +98,15 @@ S(1, 'name') Downloads(다운로드) 폴더 안 input (1).txt 비교
 
 S(1) A폴더,Downloads input (1).txt 와 비교 
 
-S('','','1') A폴더,Downloads sample_input (1).txt 와 비교 
+S(0,'','sample_') A폴더,Downloads sample_input.txt 와 비교 
 
-S(1, '', 1)   A폴더,Downloads sample_input (1).txt 와 비교
+S(1, '', 'sample_')   A폴더,Downloads sample_input (1).txt 와 비교
 
-S('', 'name') Downloads(pc이름이 name, 다운로드)  input.txt 와 비교
+S(0, 'name') Downloads(pc이름이 name, 다운로드)  input.txt 와 비교
 
 S(1,'name') Downloads(pc이름이 name, 다운로드)  input (1).txt 와 비교
 
- S(1,'name','아무 값') Downloads(pc이름이 name, 다운로드)  sample_input (1).txt 와 비교
+ S(1,'name','입력값') Downloads(pc이름이 name, 다운로드)  '입력값'input (1).txt 와 비교
 
 
 
