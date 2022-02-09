@@ -13,11 +13,11 @@ S(정답 번호, '내 PC 이름')
 E(정답 번호, '내 PC 이름')
 ```
 
-Windows의 경우 input, output 다운로드시 자동으로 Downloads에 순서대로 다운로드.
+Windows의 경우 input, output 다운로드시 자동으로 Downloads(다운로드)에 순서대로 다운로드.
 
 경로(C:\Users\\'내 pc이름'\Downloads\)
 
-Downloads 폴더 안 input (num).txt output (num).txt 불러 와서 정답 비교
+Downloads(다운로드) 폴더 안 input (num).txt output (num).txt 불러 와서 정답 비교
 
 ![이미지5](README.assets/IMG_5.png)
 
@@ -57,11 +57,7 @@ EX) S(1,'name',1), E(2,'name,'a'), C(3,'name','asdsad)
 
 
 
-*
-
-input, ouput, sample_input, sample_out 외에는 비교 불가
-
-파일 이름을 input으로 변경
+*input, ouput, sample_input, sample_out 외에는 비교 불가 ->파일 이름을 input으로 변경
 
 
 
@@ -84,7 +80,7 @@ input, ouput, sample_input, sample_out 외에는 비교 불가
 
 
 
-기본 사용 
+기본 사용 방법(Downloads(다운로드)와 비교)
 
 S(번호, '내 PC 이름') Downloads(다운로드) 폴더 안 in,out put (번호).txt 비교
 
@@ -93,6 +89,8 @@ S(0, 'name') Downloads(다운로드) 폴더 안 input.txt 비교
 S(1, 'name') Downloads(다운로드) 폴더 안 input (1).txt 비교
 
 
+
+그 외 사용 예)
 
 S(1) A폴더,Downloads input (1).txt 와 비교 
 
