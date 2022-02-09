@@ -1,4 +1,4 @@
-원본 출처 :https://github.com/kuku-forum/Algorithm-study/tree/master/my_package
+참고 출처 :https://github.com/kuku-forum/Algorithm-study/tree/master/my_package
 
 
 
@@ -65,12 +65,17 @@ EX) S(1,'name','sample_')
 
 
 
-1. 1번째 인자가 공백 일 경우 input.txt, output.txt 와 비교, 번호 없음 
-2. 2번째 인자가 공백 일 경우, A폴더/Downloads 폴더내 in,output과 비교
-   - 절대 경로가 다를경우, 드래그앤 드랍후 이용
-3.  3번째 인자가 공백 일 경우 input,output과 비교, 공백이 아닐경우  sample_in(out)put.txt 와 비교
+1. 1번째 인자가 입력이 없거나 0 일 경우 input.txt, output.txt 와 비교, 
 
+2. 2번째 인자가 입력이 없거나 공백('')일 경우, A/Downloads 폴더내 in,output과 비교
+   
+   - 다운로드 폴더 절대 경로가 다를 경우, A폴더/Downloads 폴더에 드래그 앤 드랍 후 이용
+   
+3. 3번째 인자가 입력이 없거나 공백('')일 경우 input,output과 비교,
 
+   ​						 입력 값이 있을 경우   '입력 값'in(out)put.txt 와 비교 ex) S(0,'','sample_') -> sample_input.txt
+
+ 
 
 사용 예)
 
