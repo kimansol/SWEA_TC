@@ -53,7 +53,7 @@ C(정답 번호, '내 PC 이름')
 
 오류 발생 전까지 정답 비교
 
-![이미지6](README.assets/제목 없음.png)
+![이미지6](README.assets/IMG_6.png)
 
 ![이미지4](README.assets/IMG_4.PNG)txt이름이 input이 아닐 경우 S,E,C 3번째 인자에 in(out)put 앞의 값 입력 (_까지 입력)
 
