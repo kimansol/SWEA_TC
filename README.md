@@ -1,6 +1,7 @@
 참고 출처 :https://github.com/kuku-forum/Algorithm-study/tree/master/my_package
 
-
+SW Expert Academy 알고리즘 문제 TEST_CASE 자동 답안 확인을 위한 패키지 입니다.
+https://swexpertacademy.com/main/main.do
 
 폴더 경로
 
